@@ -123,3 +123,35 @@ var instructor = {
     return this.firstName + " says Bye!";
   },
 };
+/*
+
+createAnumal function 
+write a function which generates an animal object. The function should accept 3 arguments:
+- specieis: the specieis of animal ('cat', 'dog')
+- verb: a string used to name a function ("bark", "bleet")
+- noise: a string to be printed when above function is called ('woof', 'baa')
+
+
+const d = createAnimal("dog", "bark", "Woooof!")
+d.bark()
+
+
+const s = createAnimal("sheep", "bleet", "BAAAAaaaaaa")
+s.bleet
+
+
+*/
+
+//createAnimal is the variable that will be the object in this function
+
+const d = createAnimal("dog", "bark", "Woooof!");
+d.bark();
+
+function createAnimal(species, verb, noise) {
+  return {
+    species,
+    [verb]() {
+      return noise;
+    },
+  };
+}
