@@ -39,6 +39,22 @@ instructor[favoriteNumber] = "That is my favorite!"
 
 */
 
+/*
+Consolidating code which shorthand allows you to put instructor[favoriteNumber] = "That is my favorite!"
+into the instructor variable 
+
+
+var favoriteNumber = 42// variable 
+
+var instructor = {
+    firstName: 'colt'// object literal where property is firstName: and Colt is the key
+
+    [favoriteNumber]: "That is my favorite!"// setting 42 property to the string that is a key
+    
+}
+
+*/
+
 var favoriteNumber = 42;
 
 var instructor = {
