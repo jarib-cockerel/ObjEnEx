@@ -8,3 +8,10 @@ function createInstructor(firstName, lastName) {
 
 
 */
+
+function createInstructor(firstName, lastName) {
+  return {
+    firstName,
+    lastName,
+  };
+}
