@@ -63,3 +63,47 @@ var instructor = {
 
   [favoriteNumber]: "That is my favorite!",
 };
+
+/*
+
+var instructor = {
+    firstName: "colt",
+    sayHi: function(){
+        return "Hi!"
+    },
+    sayBye: function(){
+        return this.firstName + "says bye!";
+    }
+}
+
+*/
+
+/*
+
+var instructor = {
+  firstName: "Colt",
+  sayHi: "Hi",
+  sayBye: [firstName] + "says bye!",
+};
+
+unCaught referenceError: firstName because it is not a function nor defined
+you have to pass thru information 
+
+
+insteead of sayHi: "Hi" --> sayHi() {
+    return "Hi";
+}
+
+instead of adding that it is a function, the function key word is dropped as Javascript can read that 
+a function is applied to the code
+*/
+
+var instructor = {
+  firstName: "Colt",
+  sayHi() {
+    return "Hi!";
+  },
+  sayBye() {
+    return this.firstName + "says Bye!";
+  },
+};
