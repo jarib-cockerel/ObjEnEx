@@ -98,12 +98,28 @@ instead of adding that it is a function, the function key word is dropped as Jav
 a function is applied to the code
 */
 
+/*
+var instructor = {
+  firstName: "Colt",
+  sayHi() --> empty parents are telling JS to pass thru information if returned which we return "Hi!"
+  
+  {
+    return "Hi!";
+  },
+  sayBye() {
+    return this.firstName + " says Bye!"; --> return this object and add or concatinate this string thru sayBye empty parenthasis
+  },
+};
+
+
+*/
+
 var instructor = {
   firstName: "Colt",
   sayHi() {
     return "Hi!";
   },
   sayBye() {
-    return this.firstName + "says Bye!";
+    return this.firstName + " says Bye!";
   },
 };
