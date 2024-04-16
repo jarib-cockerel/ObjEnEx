@@ -28,3 +28,22 @@ function createInstructor(firstName, lastName) {
     lastName,
   };
 }
+
+/*
+
+var favoriteNumber = 42;
+var instructor = {
+    firstName: "Colt"
+}
+instructor[favoriteNumber] = "That is my favorite!"
+
+*/
+
+var favoriteNumber = 42;
+
+var instructor = {
+  firstName: "Colt", //property: key
+  //42: favorite number
+
+  [favoriteNumber]: "That is my favorite!",
+};
